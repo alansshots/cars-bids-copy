@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    width: 1200px;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Utilities */
+
+/* Navbar  */
+
+#navbar .logo i {
+    color: #4ad493;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px #ccc solid;
+    font-size: 19px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li a:hover{
+    text-decoration:underline;
+    color: #4ad493;
+}
+
+
+.surch input[type=text] {
+    padding: 0.6rem;
+    margin: 0;
+    border: 1px #ccc solid;
+    border-radius: 10px;
+}
+
+.surch input[type=text]:hover {
+    background: #f4f4f4;
+}
+
+.surch button {
+    padding: 0.6rem;
+    margin: 0;
+    border: 1px #f4f4f4 solid;
+    border-radius: 10px;   
+}
+
+/* Mni nav */
+
+#mini-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#mini-nav .ul:hover {
+    text-decoration: underline;
+    color: #4ad493;
+}
+
+
+/* cars grid */
+
+#car-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+#car-grid .card img  {
+    width: 390px;
+    height: 250px;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+#car-grid .card h4:hover{
+    text-decoration: underline;
+    color: #4ad493;
+    cursor: pointer;
+}
+
